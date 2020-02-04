@@ -24,12 +24,48 @@
 <div class="columns_row">
     <div class="columns_row__column">
         <label for="bank" class="column__title">Банк:</label>
-        <textarea id="bank" class="column__textarea" placeholder="Данні по банку з Excel"></textarea>
+        <textarea id="bank" class="column__textarea" placeholder="Данні по банку з Excel">АТ "ПУМБ"	АТ "МЕГАБАНК", Харків	980	1	2			8202830	31.07.2019	31.07.2019	0	271	334851	2600190724	ТОВ "ТІНТОРЕТТО"	41358775	31.07.2019	351629	26007261383	ТОВ "РЕЗАЛТ ПЛАС"	42484279	570000	UAH	Оплата за вікна згідно договора № 07/2019 від 22,07,19, у т.ч. ПДВ 20% = 95 000,00 грн.	8	0		15:08:55	14:53:23	2		1
+ПЕЧЕРСЬКА Ф.АТ КБ"ПРИВАТБАНК", М.КИЇВ	АТ "МЕГАБАНК", Харків	980	1	2			8202258	31.07.2019	31.07.2019	0	1197	300711	26009052600818	ТIНТОРЕТТО ТОВ	41358775	31.07.2019	351629	26007261383	ТОВ "РЕЗАЛТ ПЛАС"	42484279	330000	UAH	Оплата за вiкна згiдно договора N 07/2019 вiд 22,07,19 У сумi 275000.00 грн., ПДВ - 20 % 55000.00 грн.	8	0		14:37:19	14:22:00	2		1
+</textarea>
     </div>
     <div class="columns_row__column">
         <label for="register" class="column__title">Реєстрація:</label>
-        <textarea id="register" class="column__textarea" placeholder="Данні по реєстрації з Excel"></textarea>
+        <textarea id="register" class="column__textarea" placeholder="Данні по реєстрації з Excel">9170395116	1903	19.07.2019 00:00:00	05.08.2019 14:40:45	42484279	424842726573	ТОВ "РЕЗАЛТ ПЛАС"	41358775	413587726554	ТОВ "ТІНТОРЕТТО"	Зареєстровано	246240	41040
+9170419087	1803	18.07.2019 00:00:00	05.08.2019 14:40:44	42484279	424842726573	ТОВ "РЕЗАЛТ ПЛАС"	41358775	413587726554	ТОВ "ТІНТОРЕТТО"	Зареєстровано	218508	36418
+9170387040	1802	18.07.2019 00:00:00	05.08.2019 14:40:39	42484279	424842726573	ТОВ "РЕЗАЛТ ПЛАС"	41358775	413587726554	ТОВ "ТІНТОРЕТТО"	Зареєстровано	219732	36622
+9170386235	1801	18.07.2019 00:00:00	05.08.2019 14:40:36	42484279	424842726573	ТОВ "РЕЗАЛТ ПЛАС"	41358775	413587726554	ТОВ "ТІНТОРЕТТО"	Зареєстровано	215520	35920
+</textarea>
     </div>
+</div>
+<div class="result-box">
+    <span class="result-box__title">Колонки:</span>
+    <table>
+        <thead class="un-border">
+        <tr>
+            <th>Тип</th>
+            <th>Дата</th>
+            <th>Заголовок</th>
+            <th>Код</th>
+            <th>Сума</th>
+        </tr>
+        </thead>
+        <tbody class="un-border">
+        <tr>
+            <td>Банк</td>
+            <td><input type="number" id="bank_date" value="8"></td>
+            <td><input type="number" id="bank_title" value="14"></td>
+            <td><input type="number" id="bank_code" value="15"></td>
+            <td><input type="number" id="bank_sum" value="21"></td>
+        </tr>
+        <tr>
+            <td>Реєстрація</td>
+            <td><input type="number" id="register_date" value="2"></td>
+            <td><input type="number" id="register_title" value="9"></td>
+            <td><input type="number" id="register_code" value="7"></td>
+            <td><input type="number" id="register_sum" value="11"></td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 <div class="buttons">
     <button id="calculate">Порахувати</button>

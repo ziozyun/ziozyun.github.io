@@ -81,10 +81,16 @@ function setDrawRows(dataInfo) {
 elements.calculate.addEventListener('click', function () {
   let drawRows = setDrawRows({
     bankData: parseExcelString(elements.bank.value, {
-      date: 8, title: 14, code: 15, sum: 21
+      date: parseInt(document.getElementById('bank_date').value),
+      title: parseInt(document.getElementById('bank_title').value),
+      code: parseInt(document.getElementById('bank_code').value),
+      sum: parseInt(document.getElementById('bank_sum').value)
     }),
     registerData: parseExcelString(elements.register.value, {
-      date: 2, title: 9, code: 7, sum: 11
+      date: parseInt(document.getElementById('register_date').value),
+      title: parseInt(document.getElementById('register_title').value),
+      code: parseInt(document.getElementById('register_code').value),
+      sum: parseInt(document.getElementById('register_sum').value)
     })
   });
   let bankSum = 0, registerSum = 0, differenceSum = 0, difference;

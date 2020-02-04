@@ -68,7 +68,16 @@ thead, tbody {
     border-bottom: 3px solid black;
 }
 
+.un-border {
+    border-bottom: 1px solid black;
+}
+
 th, td {
     padding: 5px 10px;
     border: 1px solid black;
+}
+
+table input {
+    display: block;
+    width: 100%;
 }
